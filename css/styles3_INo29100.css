@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid silver;
+}
+
+.split {
+    padding-left: 10px;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    line-height: 70px;
+    font-size: 35px;
+}
+
+#logo1 {
+    color: white;
+    flex-basis: 30%;
+    transition: 0.5s;
+    background-color: rgb(18, 35, 58);
+    font-size: 20px;
+}
+
+#shadow {
+    flex-basis: 7%;
+    height: 100%;
+    right: 0;
+    background-image: linear-gradient(to right, rgb(18, 35, 58), beige);
+}
+
+#logo2 {
+    color: #5e382f;
+    background-color: beige;
+    transition: 0.5s;
+    flex-basis: 63%;
+}
+
+#logo1:hover {
+    flex-basis: 100%;
+}
+
+.logo_container {
+    display: flex;
+    flex-wrap: row wrap;
+    height: 100%;
+    padding: 5px;
+}
+
+.logo_container div {
+    flex-basis: 30%;
+}
+
+.logo_container h3 {
+    flex-basis: 70%;
+    text-align: center;
+}
+
+#logo_img1 {
+    height: 100%;
+    background-image: url("../images/centro_britanico/logo_cb.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+#logo_img2 {
+    height: 100%;
+    background-image: url("../images/cafe_bar/logo_cafe_bar.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+article {
+    color: rgb(18, 35, 58);
+    margin: 20px 5% auto 5%;
+    background-color: rgba(134, 85, 51, 0.63);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+}
+
+table,
+td,
+th,
+td {
+    background-color: white;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 2em;
+    padding: 5px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}
+
+fieldset {
+    margin-top: 30px;
+}
+
+legend {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+fieldset div {
+    margin: 5px;
+    display: flex;
+    flex-wrap: row;
+    width: 80%;
+}
+
+fieldset div label {
+    margin: 5px;
+    flex-basis: 30%;
+}
+
+fieldset div input,
+fieldset div textarea {
+    flex-basis: 70%;
+}
+
+#button {
+    flex-basis: 100%;
+}
+
+@media only screen and (max-width: 1050px) {
+    table,
+    td,
+    th,
+    td {
+        font-size: 12px;
+    }
+}

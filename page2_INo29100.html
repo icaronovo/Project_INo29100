@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="Utf-8">
+    <meta title="author" content="Ícaro Novo de Oliveira - 300329100">
+    <title>Project - Ícaro Novo de Oliveira - 300329100</title>
+    <link rel="stylesheet" href="./css/styles2_INo29100.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <script src="./scripts/scripts_INo29100.js"></script>
+    <script src="./scripts/contact_form_validation.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="./page2_INo29100.html" class="split" id="logo1">
+            <div class="logo_container">
+                <div id="logo_img1"></div>
+                <h3 id="CentroBritanico_logo">
+                    Centro Britânico Language Center
+                </h3>
+            </div>
+        </a>
+        <div id="shadow"></div>
+        <a href="./page3_INo29100.html" class="split" id="logo2" onmouseover=adjustDimensions() onmouseleave=revertDimensions()>
+            <div class="logo_container">
+                <div id="logo_img2"></div>
+                <h3 id="CafeBar_logo">
+                    Espaço Livre Cafe Bar
+                </h3>
+            </div>
+        </a>
+    </header>
+
+    <article>
+        <h1>
+            It's always a good time to start learning a new language.<br> Tell us a little bit about your <strong>dreams</strong> and let us help you achieve them!
+        </h1>
+
+        <form action="./page2_INo29100.html" id="myForm">
+            <fieldset id="userInput">
+                <legend>Contact Information</legend>
+
+                <div class="formLine">
+                    <label for="guestNameInput">Name:</label>
+                    <input type="text" name="guestNameInput" id="guestNameInput" placeholder="Enter your name" required>
+                </div>
+                <div class="formLine">
+                    <label for="guestEmailInput">E-mail:</label>
+                    <input type="email" name="guestEmailInput" id="guestEmailInput" required>
+                </div>
+                <div class="formLine">
+                    <label for="selectedLanguagesInput">Select the languages desired:</label>
+                    <div>
+                        <span>
+                            <div>
+                                <input type="checkbox" name="selectedLanguagesInput" value="english"> English
+                            </div>
+                            <div>
+                                <input type="checkbox" name="selectedLanguagesInput" value="russian"> Russian
+                            </div>
+                            <div>
+                                <input type="checkbox" name="selectedLanguagesInput" value="german"> German
+                            </div>
+                        </span>
+                        <span>
+                            <div>
+                                <input type="checkbox" name="selectedLanguagesInput" value="spanish"> Spanish
+                            </div>
+                            <div>
+                                <input type="checkbox" name="selectedLanguagesInput" value="mandarin"> Mandarin
+                            </div>
+                            <div>
+                                <input type="checkbox" name="selectedLanguagesInput" value="japanese"> Japanese
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="formLine">
+                    <label for="descriptionInput">Description:</label>
+                    <div>
+                        <textarea name="descriptionInput" id="descriptionInput" rows="5"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <span class="buttons">
+                        <input class="buttons" type="button" name="submit" value="Submit"
+                            onclick=runValidate()>
+                        <input class="buttons" type="button" name="clear" value="Clear form" onclick=clearForm(this.form)>
+                    </span>
+                </div>
+            </fieldset>
+
+            <fieldset id="userOutput">
+                <legend>Review your information</legend>
+                <h3 id="guestNameOutput"> Name:</h3>
+                <p id="guestEmailOutput">E-mail:</p>
+                <p id="selectedLangaguesOutput">Languages selected:</p>
+                <p id="descriptionOutput">Description:</p>
+                <div>
+                    <span class="buttons">
+                        <input class="buttons" type="button" name="submit" id="sendInfoButton" value="Send information"
+                            onclick="submitForm(form)">
+                    </span>
+                </div>
+            </fieldset>
+        </form>
+
+        <fieldset>
+            <legend>Social Media and contact</legend>
+            <div id="container">
+                <p>While you wait for our contact, why don't you check our presentation video and social media?</p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bDAWox-DAJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span id="socialMedia">
+                    <a href="https://www.facebook.com/centrobritanico.gru/" id="cb_face"></a>
+                    <a href="https://www.instagram.com/centrobritanico.gru/?hl=en" id="cb_insta"></a>
+                </span>
+        </fieldset>
+    </article>
+
+
+</body>
+
+
+</html>

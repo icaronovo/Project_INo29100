@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="Utf-8">
+    <meta title="author" content="Ícaro Novo de Oliveira - 300329100">
+    <title>Project - Ícaro Novo de Oliveira - 300329100</title>
+    <link rel="stylesheet" href="./css/styles3_INo29100.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./scripts/scripts_INo29100.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="./page2_INo29100.html" class="split" id="logo1" onmouseover=adjustDimensions2() onmouseleave=revertDimensions2()>
+            <div class="logo_container">
+                <div id="logo_img1"></div>
+                <h3 id="CentroBritanico_logo">
+                    Centro Britânico Language Center
+                </h3>
+            </div>
+        </a>
+        <div id="shadow"></div>
+        <a href="" class="split" id="logo2">
+            <div class="logo_container">
+                <div id="logo_img2"></div>
+                <h3 id="CafeBar_logo">
+                    Espaço Livre Cafe Bar
+                </h3>
+            </div>
+        </a>
+    </header>
+
+    <article onload=styleTable()>
+        <h1>
+            Eat some great food and enjoy a good time with your friends!
+            <br> Check our events schedule bellow:
+        </h1>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Hour</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weekly Night of samba</td>
+                    <td>Come dance with our samba class, open to everyone, no need for previous knowledge!</td>
+                    <td>Nov 27, 2021</td>
+                    <td>6p.m.</td>
+                </tr>
+                <tr>
+                    <td>Book Release: The Brazilian Harry Potter</td>
+                    <td>Release and book signning with the author of the book Brazilian Harry Potter</td>
+                    <td>Nov 28, 2021</td>
+                    <td>3p.m.</td>
+                </tr>
+                <tr>
+                    <td>Lecture: The history of the city of São Paulo</td>
+                    <td>Understand a little about the development of the biggest city in Brazil.</td>
+                    <td>Dec 1, 2021</td>
+                    <td>7:30p.m.</td>
+                </tr>
+                <tr>
+                    <td>Weekly Night of samba</td>
+                    <td>Come dance with our samba class, open to everyone, no need for previous knowledge!</td>
+                    <td>Dec 4, 2021</td>
+                    <td>6p.m.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <fieldset>
+            <legend>Advertise your event</legend>
+            <div>
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName">
+            </div>
+            <div>
+                <label for="eventDescription">Description:</label>
+                <textarea name="eventDescription" id="eventDescription" rows="4"></textarea>
+            </div>
+            <div>
+                <label for="eventDate">Date:</label>
+                <input type="date" id="eventDate" name="eventDate">
+            </div>
+            <div>
+                <label for="eventHour">Hour:</label>
+                <input type="text" id="eventHour" name="eventHour">
+            </div>
+            <div>
+                <input type="button" value="Submit" id="button" onclick=addEvent(this.form)>
+            </div>
+        </fieldset>
+    </article>
+</body>
+
+</html>
